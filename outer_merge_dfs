@@ -1,0 +1,11 @@
+import pandas as pd
+d={'Name':['Prem','kavitha','Dhanashekar','K Mohana bai','Yamini','Latha','Puppy','Rani'],
+   'Age':[30,40,50,60,70,77,49,89]}  
+df1 = pd.DataFrame(data=d, columns=['Name','Age'])
+print(df1) 
+d1={'Name':['Prem','kavitha','Dhanashekar','K Mohana bai','Yamini','Sam','Somu','Dhamu'],
+   'Dept no':[10,20,30,40,50,60,70,80]}  
+df2 = pd.DataFrame(data=d1, columns=['Name','Dept no'])
+print(df2) 
+df_outer=pd.merge(df1,df2,on='Name',how='outer')
+print(df_outer)
