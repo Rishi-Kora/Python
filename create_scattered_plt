@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0,10,30)
+y = np.sin(x)
+z = np.cos(x)
+fig2 = plt.figure()
+ax = fig2.add_axes([0,0,1,1])
+ax.scatter(x,y,color='g')
+ax.scatter(x,z,color='b')
+plt.show()
