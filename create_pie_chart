@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0,10,100)
+y = np.sin(x)
+fig1 = plt.figure()
+ax = fig1.add_axes([0,0,1,1])
+languages = ['English','French','Spanish','Latin','German']
+people = [100,50,150,40,70]
+ax.pie(people, labels=languages, autopct='%0.1f%%')
+plt.show()
